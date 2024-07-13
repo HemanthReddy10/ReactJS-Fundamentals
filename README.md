@@ -1,15 +1,14 @@
 # ReactJS-Fundamentals
-<ul>
-<li>1</li>
-<li>1</li>
-<li>1</li>
-</ul>
+<ol>
+<li>What is React and Why?</li>
+<li>Components</li>
+<li>CSS in React</li>
+<li>JSX</li>
+<li>React Elements</li>
+<li>Props(properties)</li>
+<li>Props Destructuring</li>
+<li>Statemanagement (Hooks)</li>
+<li></li>
+<li></li>
+</ol>
 
-1.What is React and Why? 
-2.Components
-3.CSS in React
-4.JSX
-5.Elements
-6.Props(properties)
-7.Props Destructuring
-8.Statemanagement (Hooks)
