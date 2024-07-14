@@ -10,6 +10,9 @@ import FormExample from "./FormExample";
 import SampleArray from "./SampleArray";
 import TempLit from "./TempLit";
 import UserPage from "./UserPage";
+import Employee from "./Employee";
+import circuit from "./Circuit";
+import Circuit from "./Circuit";
 
 const car = {
   model: "tesla",
@@ -39,6 +42,11 @@ function App() {
       <hr/>
       <UserPage/>
       <hr/>
+      <Employee/>
+      <hr />
+      <Circuit/>
+      <hr />
+      
     </div>
   );
 }
