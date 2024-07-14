@@ -5,6 +5,8 @@ import ThirdComp from './props-container/ThirdComp'
 import FourthComp from './props-container/FourthComp'
 import { StateMgmt } from './state-management/StateMgmt'
 import { ClickEvent } from './ClickEvent'
+import ScreenSize from './state-management/ScreenSize'
+import FormExample from './FormExample'
 
 
 const car={
@@ -14,7 +16,7 @@ const car={
   color:"silver"
 }
 function App() {
-
+  // eslint-disable-next-line
   const[sampleCondition,setSampleCondition]=useState(true);
 
  
@@ -27,6 +29,10 @@ function App() {
      { sampleCondition? <FourthComp name="hemanth"/> : <ThirdComp/>}
      <br/>
      <ClickEvent/>
+     <br/>
+     <ScreenSize/>
+     <hr/>
+     <FormExample/>
     </div>
   )
 }

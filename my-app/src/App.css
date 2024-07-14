@@ -18,3 +18,27 @@ margin:30px;
   opacity:0.5;
   margin:10px;
 }
+
+.form-section{
+  background-color:black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.form-input{
+  width: 25px ;
+  height:25px ;
+
+}
+
+.submit-btn{
+  padding:5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: aqua;
+}
+.form-section h2{
+  color: #fffcf2;
+}
