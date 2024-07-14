@@ -11,8 +11,9 @@ import SampleArray from "./SampleArray";
 import TempLit from "./TempLit";
 import UserPage from "./UserPage";
 import Employee from "./Employee";
-import circuit from "./Circuit";
 import Circuit from "./Circuit";
+import MultiState from "./MultiState";
+import MultiStatePractise from "./MultiStatePractise";
 
 const car = {
   model: "tesla",
@@ -46,7 +47,10 @@ function App() {
       <hr />
       <Circuit/>
       <hr />
-      
+      {/* <MultiState/> */}
+      <hr/>
+      <MultiStatePractise/>
+
     </div>
   );
 }
