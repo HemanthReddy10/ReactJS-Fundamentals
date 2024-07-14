@@ -7,6 +7,9 @@ import { StateMgmt } from "./state-management/StateMgmt";
 import { ClickEvent } from "./ClickEvent";
 import ScreenSize from "./state-management/ScreenSize";
 import FormExample from "./FormExample";
+import SampleArray from "./SampleArray";
+import TempLit from "./TempLit";
+import UserPage from "./UserPage";
 
 const car = {
   model: "tesla",
@@ -30,6 +33,12 @@ function App() {
       <hr />
       <FormExample />
       <hr />
+      <SampleArray/>
+      <hr />
+      <TempLit/>
+      <hr/>
+      <UserPage/>
+      <hr/>
     </div>
   );
 }
