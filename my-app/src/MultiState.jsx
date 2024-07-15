@@ -1,7 +1,9 @@
 import React, { useReducer,useEffect } from 'react'
+import { Profiler } from 'react'
 
 //USEREDUCER
 //types
+// Action variables
 const FETCH_INIT="FETCH_INIT"
 const FETCH_START="FETCH_START"
 const FETCH_ERROR="FETCH_ERROR"
@@ -13,7 +15,7 @@ const initialState={
     error:null
 }
 
-//function for usereducer
+//function for usereducer /// Reducer Function
 const dataReducer=(state,action)=>{
 
     switch (action.type) {
@@ -37,7 +39,8 @@ const MultiState = () => {
         dispatch({type:FETCH_INIT})
         const response=await fetch("https://jsonplaceholder.typicode.com/users");
         const newData=await response.json();
-        dispatch({type:FETCH_START,payload:newData});
+        const data = {type:FETCH_START,payload:newData};
+        dispatch(data);
 
       } catch (error) {
           dispatch({type:FETCH_ERROR,payload:error.message})
@@ -68,3 +71,14 @@ const MultiState = () => {
 }
 
 export default MultiState
+
+
+
+//centralState.jsx
+// const[state,dispatch]=useReducer(dataReducer,initialState)
+
+// reducer folder 
+// -> index.jsx {{},{},{}}  Central State
+// -> ProfileReducer.jsx {}
+// -> productsReducer.jsx{}
+// -> OrderReducer.jsx {}
